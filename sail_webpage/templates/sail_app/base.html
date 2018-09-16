@@ -1,0 +1,100 @@
+<!-- <!DOCTYPE html> -->
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Sail Lab Webpage{% endblock %}</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+    <link rel="stylesheet" href="{% static "css/index_css.css" %}">
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet"> -->
+
+    <!-- <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script> -->
+
+
+    <link href="{% static "css/style.css" %}" rel="stylesheet" type="text/css">
+    <link href="{% static "css/pin.css" %}" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="{% static "jquery-3.3.1.min.js" %}"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </head>
+  {% block script %}
+  {% endblock %}
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #66ccff" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#menu" style="height: 40px;">
+              <span class="sr-only">切换导航</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-left" href="/"><img id="logoImg" alt="Brand" style="max-width:150px;margin-top:20px;" src="{% static "images/website/logo2.png" %}"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="menu">
+            <!-- <div class="search-and-signup-button white pull-right hidden-md hidden-sm hidden-xs">
+              <button data-toggle="collapse" data-target="#search-form-switcher"><i class="fa fa-search"></i></button>
+            </div> -->
+            <ul id="nav" class="nav navbar-nav navbar-left">
+              <li class="active"><a href="/">HOME</a></li>
+              <li><a href="/#news">NEWS</a></li>
+              <!-- <li><a href="/#projects">Project</a></li> -->
+
+              <li class="dropdown">
+                <a  id="opening" class="dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">RESEARCH<b class="caret"></b></a>
+                <ul class="dropdown-menu" id="dropdown">
+                  <li style="margin-top:0px;margin-bottom:0px;"><a id="dropdown-li" href="/#projects"><p>Research Overview</p></a></li>
+                  <li style="margin-top:0px;margin-bottom:0px;"><a id="dropdown-li" href="/research1"><p>1. mHealth and Wearable Innovations</p></a></li>
+                  <li style="margin-top:0px;margin-bottom:0px;"><a id="dropdown-li" href="/research2"><p>2. Interactive Rehabilitation</p></a></li>
+                  <li style="margin-top:0px;margin-bottom:0px;"><a id="dropdown-li" href="/research3"><p>3. Medical and Health Data Informatics</p></a></li>
+                  <li style="margin-top:0px;margin-bottom:0px;"><a id="dropdown-li" href="/research4">
+                    <p>4. Privacy-preserving deep learning</p>
+                    <p>architecture for mHealth applications</p></a></li>
+                </ul>
+              </li>
+
+              <li><a href="/#member">MEMBER</a></li>
+              <li><a href="/publications">PUBLICATION</a></li>
+              <li><a href="/course">CURRICULA</a></li>
+              <li class="dropdown">
+                <a id="opening" class="dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">OPENING<b class="caret"></b></a>
+                <ul class="dropdown-menu" id="dropdown">
+                  <li style="margin-top:0px;margin-bottom:0px;"><a id="dropdown-li" href="/students"><p>Perspective Students</p></a></li>
+                  <li style="margin-top:0px;margin-bottom:0px;"><a id="dropdown-li" href="/opportunities"><p>K12 Opportunities</p></a></li>
+                </ul>
+              </li>
+              <li><a href="/#partners">PARTNERS</a></li>
+              <li><a href="/#contact">CONTACT</a></li>
+            </ul>
+
+
+          </div>
+
+        </div>
+    </nav>
+    <div class="container">
+      {% include 'sail_app/messages.html' %}
+    </div>
+
+    {% block body_block %}
+    {% endblock %}
+
+
+    <div class="footer ">
+
+          <hr>
+          <div class="row footer-bottom">
+              <ul class="list-inline text-center">
+                  <li>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made by Huiyi Cao and Jianian Zheng</li>
+              </ul>
+          </div>
+      </div>
+
+  </body>
+</html>

@@ -1,0 +1,47 @@
+{% extends "sail_app/base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+    Research: mHealth and Wearable Innovations
+{% endblock %}
+
+{% block body_block %}
+
+<div class="container" style="margin-bottom:30px;">
+      <div class="container" style="margin-bottom:10px;">
+          <h2 class="container">
+              mHealth and Wearable Innovations
+          </h2>
+      </div>
+      <div class="">
+          <span class="font18bold">Wearable Nanofabrication Designs Create Better Fitting Intelligent Prosthetic Sockets (w/Dr. Hongping Zhao at Ohio State University)</span>
+            <p></p>
+            <span class="font18">The past decades have witnessed great progress in the prosthetics field through new materials and technologies such as targeted muscle reinnervation, powered knee, and ankle prosthesis. However, the biomechanical load due to the unnatural mechanical interaction between the soft tissues of the residual limb and the prosthetic socket is still not fully understood and needs to be further investigated. This interdisciplinary research project will create new sensing and computational methods enabling knowledge discovery for better prosthesis fitting quality with the goal of enhancing the design, fit, usability, and interface of prosthetic limbs for individuals with amputation in practice.</span>
+          <p></p>
+          <div class="container" style="margin-bottom:10px;"></div>
+          <center><img src="{% static "images/research/research1_1.png" %}" style="height:300px;"alt=""></center>
+      </div>
+    </div>
+
+    <div class="container" style="margin-bottom:30px;">
+      <div class="">
+          <span class="font18bold">Wearable Gait Lab - Risk Factors Identification for Work-related Injuries (w/ Dr. Wenyao Xu at Unversity at Buffalo)</span>
+            <p></p>
+            <span class="font18">This wearable innovation relates to systems and methods to analyze gait, balance or posture information extracted from data collected by one or more wearable and connected sensor devices with sensors embedded therewithin. The embedded sensors include a three-axis accelerometer, a three-axis gyroscope and an array of pressure sensors. Sensor data detected by the sensors can be received by a mobile computing device, which can analyze the sensor data to identify a pattern related to gait, balance or posture within the sensor data; and apply a statistical/machine learning-based classification to the pattern related to gait, balance or posture to assign a clinical parameter to the pattern characterizing a risk of work injuries.</span>
+          <p></p>
+          <center><img src="{% static "images/research/research1_2.png" %}" style="height:300px;"alt=""></center>
+      </div>
+    </div>
+
+    <div class="container" style="margin-bottom:30px;">
+      <div class="">
+          <span class="font18bold">[NEW] Address Health Disparity Through mHealth: Video Intervention Program for Smoking Cessation (w/ Dr. Monica Hooper at Office of Cancer Disparities Research)</span>
+            <p></p>
+            <span class="font18">The overall goal of this multidisciplinary project is to create a video-based smoker behavior intervention platform through mobile health technologies, with a holistic view and integrative approach consisting of innovations in concepts, information fusion, knowledge discovery, system integration, and systematic intervention strategies development. The dual focus of this proposal is to address barriers that prevent lowincome African Americans from accessing culturally specific, evidence-based smoking cessation assistance, and to apply appropriate technology to increase reach. mHealth has the potential to engage economically disadvantaged African American smokers within a large urban community and facilitate cessation.</span>
+          <p></p>
+          <p><video class="centervideo"controls="" height="320" width="600"><br>
+        	<source src="http://engineering.case.edu/groups/sail/sites/engineering.case.edu.groups.sail/files/images/introductionpathwaytofreedom.mp4" type="video/mp4"> </video></p>
+        </div>
+    </div>
+
+{% endblock %}

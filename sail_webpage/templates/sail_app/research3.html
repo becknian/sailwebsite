@@ -1,0 +1,39 @@
+{% extends "sail_app/base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+    Research: Medical and Health Data Informatics
+{% endblock %}
+
+{% block body_block %}
+
+<div class="container" style="margin-bottom:30px;">
+      <div class="container" style="margin-bottom:10px;">
+          <h2 class="container">
+              Medical and Health Data Informatics
+          </h2>
+      </div>
+      <div class="">
+          <span class="font18bold">Early Melanoma Detection via Generative Hidden Correlation Discovery and Deep Network Ensemble
+</span>
+            <p></p>
+            <span class="font18">Malignant melanoma is the deadliest form of skin cancer that starts in pigment cells (melanocytes) and gradually grows out of control. To increase the 5-year survival rate, it is especially important to detect melanoma early enough when it is most likely to be cured. In recent years, with the development of newer imaging, computer vision and machine learning techniques, computer-aided detection/diagnosis in analyzing images of melanoma automatically and continuously has become feasible and promising. In this study, we focus on a binary classification problem and propose an early melanoma detection system based on a large dermoscopy images dataset with high variance. Entropy correlation coefficient, cross correlation information and multiple texture features are extracted and combined to describe the similarity between images in a manner of graph ensemble. Steady-state probability of Random Walk with Restart is combined with deep network ensemble to take advantage of the complex non-linear relationship that exists across melanoma images.
+            </span>
+          <p></p>
+          <div class="container" style="margin-bottom:10px;"></div>
+          <center><img src="{% static "images/research/research3_1.jpg" %}" style="height:300px;"alt=""></center>
+      </div>
+    </div>
+
+    <div class="container" style="margin-bottom:30px;">
+      <div class="">
+          <span class="font18bold">Discover Predominant Factors for Mortality of Weekend and Weekday Admission to the ICU</span>
+            <p></p>
+            <span class="font18">It has been a controversial and important logistical issue that mortality of patients is related to whether the patients are admitted to the ICU on weekdays or weekends. Although the results of excess mortality associated with weekend admission have been demonstrated in many studies based on various dataset, the underlying causal mechanisms and the potential factors are not clear at present. To better study this problem, we extract medical record features from the database and suggest a GAM(Generalized Additive Model) feature selection method to find the main contribution features on analyzing this problem. The GAM feature selection system could rank the importance individuates candidate features, which turn out to be effective on reducing the complexity of a medical issue from a medical statistical analyzing point of view.
+            </span>
+          <p></p>
+          <center><img src="{% static "images/research/research3_2.png" %}" style="height:300px;"alt=""></center>
+      </div>
+    </div>
+
+{% endblock %}

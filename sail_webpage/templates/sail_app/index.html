@@ -1,0 +1,643 @@
+{% extends "sail_app/base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+    Sail Lab Webpage
+{% endblock %}
+
+{% block script %}
+<script type="text/javascript">
+
+</script>
+
+{% endblock %}
+
+{% block body_block %}
+
+<div class="container" style="margin-bottom:50px;">
+
+      <div class="row">
+        <div class="col-md-6 animate-box">
+          <div class="about-desc">
+            <div class="item">
+              <h1 align="justify" class="text-center">Welcome To SAIL@CWRU!</h1>
+              <p class="font20 text-center">Sensing and Interaction Laboratory at CWRU.</p>
+            </div>
+            <img class="img-responsive about-img center-block" style="max-width:50%"src="{% static "images/website/homepage.png" %}">
+
+          </div>
+        </div>
+        <!-- <div class="col-md-1 centerdiv"></div> -->
+        <div class="col-md-6 animate-box">
+          <div class="about-desc">
+
+            <div class="item" >
+              <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2500">
+              <!-- 轮播（Carousel）指标 -->
+              <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                  <li data-target="#myCarousel" data-slide-to="4"></li>
+                  <li data-target="#myCarousel" data-slide-to="5"></li>
+                  <li data-target="#myCarousel" data-slide-to="6"></li>
+                  <li data-target="#myCarousel" data-slide-to="7"></li>
+                  <li data-target="#myCarousel" data-slide-to="8"></li>
+                  <li data-target="#myCarousel" data-slide-to="9"></li>
+                  <li data-target="#myCarousel" data-slide-to="10"></li>
+                  <li data-target="#myCarousel" data-slide-to="11"></li>
+              </ol>
+              <!-- 轮播（Carousel）项目 -->
+              <div class="carousel-inner">
+                  <div class="item">
+                    <img class="slideImg img-responsive center-block" src="{% static "images/showcase/showcase1.JPG" %}" alt="Third slide">
+                    <div class="carousel-caption font20">ShowCase @CWRU, 2018</div>
+                  </div>
+                  <div class="item active">
+                      <img class="slideImg img-responsive center-block" src="{% static "images/first_graduation_menghan_liu_2.png" %}" alt="First slide">
+                      <div class="carousel-caption font20">First Graduation from SAIL@CWRU: Ms. Menghan Liu, Fall 2016</div>
+                  </div>
+                  <div class="item">
+                      <img class="slideImg img-responsive center-block" src="{% static "images/lunch_celebration_12142016.png" %}" alt="Second slide">
+                      <div class="carousel-caption font20">Lunch Celebration on Dec 9, 2016</div>
+                  </div>
+                  <div class="item">
+                    <img class="slideImg img-responsive center-block" src="{% static "images/showcase/showcase2.JPG" %}" alt="Third slide">
+                    <div class="carousel-caption font20">ShowCase @CWRU, 2018</div>
+                  </div>
+                  <div class="item">
+                    <img class="slideImg img-responsive center-block" src="{% static "images/showcase/showcase4.JPG" %}" alt="Third slide">
+                    <div class="carousel-caption font20">ShowCase @CWRU, 2018</div>
+                  </div>
+                  <div class="item">
+                    <img class="slideImg img-responsive center-block" src="{% static "images/showcase/showcase3.JPG" %}" alt="Third slide">
+                    <div class="carousel-caption font20">ShowCase @CWRU, 2018</div>
+                  </div>
+                  <div class="item">
+                    <img class="slideImg img-responsive center-block" src="{% static "images/showcase/showcase5.JPG" %}" alt="Third slide">
+                    <div class="carousel-caption font20">ShowCase @CWRU, 2018</div>
+                  </div>
+                  <div class="item">
+                    <img class="slideImg img-responsive center-block" src="{% static "images/showcase/showcase6.JPG" %}" alt="Third slide">
+                    <div class="carousel-caption font20">ShowCase @CWRU, 2018</div>
+                  </div>
+                  <div class="item">
+                    <img class="slideImg img-responsive center-block" src="{% static "images/showcase/showcase7.JPG" %}" alt="Third slide">
+                    <div class="carousel-caption font20">ShowCase @CWRU, 2018</div>
+                  </div>
+                  <div class="item">
+                    <img class="slideImg img-responsive center-block" src="{% static "images/showcase/showcase9.JPG" %}" alt="Third slide">
+                    <div class="carousel-caption font20">ShowCase @CWRU, 2018</div>
+                  </div>
+                  <div class="item">
+                    <img class="slideImg img-responsive center-block" src="{% static "images/showcase/showcase8.JPG" %}" alt="Third slide">
+                    <div class="carousel-caption font20">ShowCase @CWRU, 2018</div>
+                  </div>
+
+
+
+              </div>
+              <!-- 轮播（Carousel）导航 -->
+              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+            </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="news" class="container " style="margin-bottom:40px;">
+
+      <div class="row">
+        <div class="col-md-4 center-left animate-box" style="background-color:#66ccff;height:330px;">
+          <div class="about-desc">
+            <div class="item" style="margin-bottom:30px;">
+
+            </div>
+            <img class="img-responsive about-img center-block" src="{% static "images/news.png" %}">
+            <div class="item" style="margin-top:20px;">
+              <h2 align="justify" class="text-center font25" style="color:#005580">Recent News</h2>
+            </div>
+            <div class="item">
+              <p align="center"><a href="/news" class="btn btn-primary btn-outline" style="color:#005580">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-md-1 centerdiv"></div> -->
+        <div class="col-md-8 center-left animate-box">
+          <div class="about-desc">
+            <div class="item">
+            <!-- <div class="item" id="scrollBox"> -->
+              <ul align="justify" style="list-style-type: none">
+                <li>
+                  <span style="color:red">[Service]</span>
+                  <span>Dr. Huang serves as the CSE graduate committee on August, 2018</span>
+                </li>
+                <li>
+                  <span style="color:#DAA520">[Scholarship]</span>
+                  <span>Ms. Ridaa Ali, received SOURCE summer student research fund this year for the topic "Explore Correlation Between Body Balance and Hearing Sensitivity using Mobile Health Technology" on June 2018</span></li>
+                <li>
+                  <span style="color:red">[Service]</span>
+                  <span>Dr. Huang joined the Editorial Board of PLOS ONE as an Academic Editor on May 2018</span></li>
+                <li>
+                  <span style="color:red">[Status]</span>
+                  <span>Dr. Huang joined Institute for Smart, Secure and Connected Systems (ISSACS) at Case Western Reserve University on May 2018</span></li>
+                <li>
+                  <span style="color:green">[Award]</span>
+                  <span>SAIL@CWRU becomes Data Challenge Winning Team in IEEE International Conference on Biomedical and Health Informatics and IEEE International Conference on Wearable and Implantable Body Sensor Network, on March 2018</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="projects" class="container" style="margin-bottom:50px; ">
+
+      <div class="row">
+        <div class="col-md-6 animate-box">
+          <div class="about-desc">
+
+            <div class="item" style="height:250px;">
+              <div id="myCarouselResearch1" class="carousel slide" data-ride="carousel" data-interval="5000">
+              <div class="carousel-inner">
+                  <div class="item">
+                    <img class="slideImg img-responsive center-block" style="height:100%;"src="{% static "images/research/research1_1.png" %}" alt="Third slide">
+                  </div>
+                  <div class="item active">
+                      <img class="slideImg img-responsive center-block" style="height:100%;"src="{% static "images/research/research1_2.png" %}" alt="First slide">
+                    </div>
+
+              </div>
+              <!-- 轮播（Carousel）导航 -->
+              <a class="left carousel-control" href="#myCarouselResearch1" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarouselResearch1" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+            </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- <div class="col-md-1 centerdiv"></div> -->
+        <div class="col-md-6 center-left animate-box">
+          <div class="about-desc">
+            <div class="item">
+              <h2 align="justify" class="text-center font25">mHealth and Wearable Innovations</h2>
+            </div>
+            <div class="item">
+              <ul align="justify">
+                <li class="font18" style="margin-bottom:20px;margin-top:20px">Wearable Nanofabrication Designs Create Better Fitting Intelligent Prosthetic Sockets</li>
+                <li class="font18" style="margin-bottom:20px;margin-top:20px">Wearable Gait Lab - Risk Factors Identification for Work-related Injuries</li>
+                <li class="font18" style="margin-bottom:20px;margin-top:20px">Address Health Disparity Through mHealth: Video Intervention Program for Smoking Cessation</li>
+              </ul>
+
+              <p><a href="/research1" class="btn btn-primary btn-outline">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="margin-bottom:50px;">
+      <div class="row">
+        <!-- <div class="col-md-1 centerdiv"></div> -->
+        <div class="col-md-6 center-right animate-box">
+          <div class="about-desc">
+            <div class="item">
+              <h2 align="justify" class="text-center">Interactive Rehabilitation</h2>
+            </div>
+            <div class="item">
+              <ul align="justify">
+                <li class="font18" style="margin-bottom:20px;margin-top:20px">Wearable and Connected Gait Analytics System (WCGAS) Providing Quantitative Statistical Support for Human Balance Tests</li>
+                <li class="font18" style="margin-bottom:20px;margin-top:20px">Frozen Shoulder Rehabilitation using Virtual Reality Games</li>
+                <li class="font18" style="margin-bottom:20px;margin-top:20px">Machine learning-based assessment tool for imbalance and vestibular dysfunction with virtual reality rehabilitation system</li>
+              </ul>
+
+              <p><a href="/research2" class="btn btn-primary btn-outline">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 animate-box">
+          <div class="about-desc">
+            <div class="item" style="height:250px;">
+              <div id="myCarouselResearch2" class="carousel slide" data-ride="carousel" data-interval="5000">
+              <div class="carousel-inner">
+                  <div class="item">
+                    <img class="slideImg img-responsive center-block" style="height:100%;"src="{% static "images/research/research2_1.png" %}" alt="Third slide">
+                  </div>
+                  <div class="item active">
+                      <img class="slideImg img-responsive center-block" style="height:100%;"src="{% static "images/research/research2_2.png" %}" alt="First slide">
+                  </div>
+
+              </div>
+              <!-- 轮播（Carousel）导航 -->
+              <a class="left carousel-control" href="#myCarouselResearch2" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarouselResearch2" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+            </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="margin-bottom:50px;">
+      <div class="row">
+        <div class="col-md-6 animate-box">
+          <div class="about-desc">
+
+            <div class="item" style="height:250px;">
+              <div id="myCarouselResearch3" class="carousel slide" data-ride="carousel" data-interval="5000">
+              <div class="carousel-inner">
+                  <div class="item">
+                    <img class="slideImg img-responsive center-block" style="height:100%;"src="{% static "images/research/research3_1.jpg" %}" alt="Third slide">
+                  </div>
+                  <div class="item active">
+                      <img class="slideImg img-responsive center-block" style="height:100%;"src="{% static "images/research/research3_2.png" %}" alt="First slide">
+                  </div>
+
+              </div>
+              <!-- 轮播（Carousel）导航 -->
+              <a class="left carousel-control" href="#myCarouselResearch3" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarouselResearch3" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+            </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- <div class="col-md-1 centerdiv"></div> -->
+        <div class="col-md-6 center-left animate-box">
+          <div class="about-desc">
+            <div class="item">
+              <h2 align="justify" class="text-center">Medical and Health Data Informatics</h2>
+            </div>
+            <div class="item">
+              <ul align="justify">
+                <li class="font18" style="margin-bottom:20px;margin-top:20px">Early Melanoma Detection via Generative Hidden Correlation Discovery and Deep Network Ensemble</li>
+                <li class="font18" style="margin-bottom:20px;margin-top:20px">Discover Predominant Factors for Mortality of Weekend and Weekday Admission to the ICU</li>
+              </ul>
+
+              <p><a href="/research3" class="btn btn-primary btn-outline">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="margin-bottom:100px;">
+      <div class="row">
+        <!-- <div class="col-md-1 centerdiv"></div> -->
+        <div class="col-md-6 center-right animate-box">
+          <div class="about-desc">
+            <div class="item" style="margin-top:30px;">
+
+            </div>
+            <div class="item">
+              <h2 align="justify" class="text-center">Privacy-preserving deep learning architecture for mHealth applications</h2>
+            </div>
+            <div class="item">
+              <ul align="justify">
+
+              </ul>
+
+              <p><a href="/research4" class="btn btn-primary btn-outline">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 animate-box" style="height:350px;">
+          <div class="about-desc">
+
+            <img class="img-responsive about-img center-block" style="height:100%" src="{% static "images/research/research4_1.png" %}">
+            <!-- <img class="img" src="images/logo.png"> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-area" id="member" style="margin-bottom:50px;">
+      <div class="container">
+        <!-- <h2 style="margin-bottom:10px;"><Center>Members of SAIL Lab</Center></h2> -->
+        <!-- <div style="background:linear-gradient(to left,#efefef,#0066FF,#efefef);height:1px;margin-top:0px;margin-bottom:10px;"></div> -->
+
+        <div class="row" style="height: 200px;">
+          <div class="col-md-3" style="background-color:#66ccff;height:100%;">
+            <img class="img-responsive about-img center-block"style="margin-top:40px;" src="{% static "images/member.png" %}" >
+            <h2 align="justify" class="text-center font25" style="color:#005580;margin-top:10px;">Members</h2>
+            <p align="center"><a href="/member" class="btn btn-primary btn-outline" style="color:#005580">Learn More</a></p>
+
+          </div>
+          <div class="col-md-3">
+            <center><img class="img-responsive about-img center-block" src="{% static "images/Member/huang.png" %}" alt="Ming-Chun Huang" style="height: 200px;">
+            </center>
+
+          </div>
+          <div class="col-md-6">
+            <h3>Ming-Chun Huang</h3>
+            <h3>黃名畯</h3>
+            <p class="font18">Assistant professor, Electrical Engineering and Computer Science Department at the Case School of Engineering</p>
+            <p class="font18">Investigator, Department of Veterans Affairs Medical Center Advanced Platform Technology (APT) Center</p>
+              </div>
+        </div>
+
+        <div class="row" style="margin-top:30px;">
+          <div class="col-md-2">
+            <div class="box">
+              <img class="img-head" src="{% static "images/Member/haotian.jpg" %}" alt="Haotian Jiang">
+            <div class="box-content">
+            <h5 class="text-center" style="margin-top:5px;margin-bottom:5px;">Haotian Jiang</h5>
+            <h5 class="text-center"style="margin-bottom:5px;">姜昊田</h5>
+            <p class="text-center"style="margin-bottom:5px;">PhD</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="box">
+            <img class="img-head"src="{% static "images/Member/diliang.png" %}" alt="Diliang Chen">
+            <div class="box-content">
+            <h5 class="text-center" style="margin-top:5px;margin-bottom:5px;">Diliang Chen</h5>
+            <h5 class="text-center"style="margin-bottom:5px;">陈帝良</h5>
+            <p class="text-center"style="margin-bottom:5px;">PhD</p>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="box">
+            <img class="img-head"src="{% static "images/Member/yi.jpg" %}" alt="Yi Cai">
+            <div class="box-content">
+            <h5 class="text-center" style="margin-top:5px;margin-bottom:5px;">Yi Cai</h5>
+            <h5 class="text-center"style="margin-bottom:5px;">才熠</h5>
+            <p class="text-center"style="margin-bottom:5px;">PhD</p>
+          </div>
+          </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="box">
+            <img class="img-head"src="{% static "images/Member/golnoush.jpg" %}" alt="Golnoush Asaeikheybari">
+            <div class="box-content">
+            <h5 class="text-center" style="margin-top:5px;margin-bottom:5px;">Golnoush Asaeikheybari</h5>
+            <h5 class="text-center"style="margin-bottom:5px;">گلنوش آسایی خیبری</h5>
+            <p class="text-center"style="margin-bottom:5px;">PhD</p>
+          </div>
+          </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="box">
+            <img class="img-head"src="{% static "images/Member/jia.png" %}" alt="Jia Chen">
+            <div class="box-content">
+            <h5 class="text-center" style="margin-top:5px;margin-bottom:5px;">Jia Chen</h5>
+            <h5 class="text-center"style="margin-bottom:5px;">陈佳</h5>
+            <p class="text-center"style="margin-bottom:5px;">Master</p>
+          </div>
+          </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="box">
+            <img class="img-head"src="{% static "images/Member/xiaoliang.jpg" %}" alt="Xiaoliang Zhang">
+            <div class="box-content">
+            <h5 class="text-center" style="margin-top:5px;margin-bottom:5px;">Xiaoliang Zhang</h5>
+            <h5 class="text-center"style="margin-bottom:5px;">张晓亮</h5>
+            <p class="text-center"style="margin-bottom:5px;">Master</p>
+          </div>
+          </div>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:30px;">
+          <div class="col-md-2">
+            <div class="box">
+            <img class="img-head" src="{% static "images/Member/taiyu.jpg" %}" alt="Taiyu Chen">
+            <div class="box-content">
+            <h5 class="text-center" style="margin-top:5px;margin-bottom:5px;">Taiyu Chen</h5>
+            <h5 class="text-center"style="margin-bottom:5px;">陈泰雨</h5>
+            <p class="text-center"style="margin-bottom:5px;">Master</p>
+          </div>
+          </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="box">
+            <img class="img-head"src="{% static "images/Member/xiaoye.jpg" %}" alt="Xiaoye Qian">
+            <div class="box-content">
+            <h5 class="text-center" style="margin-top:5px;margin-bottom:5px;">Xiaoye Qian</h5>
+            <h5 class="text-center"style="margin-bottom:5px;">钱晓晔</h5>
+            <p class="text-center"style="margin-bottom:5px;">Master</p>
+          </div>
+          </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="box">
+            <img class="img-head"src="{% static "images/Member/huiyi_cao.jpg" %}" alt="Huiyi Cao">
+            <div class="box-content">
+            <h5 class="text-center" style="margin-top:5px;margin-bottom:5px;">Huiyi Cao</h5>
+            <h5 class="text-center"style="margin-bottom:5px;">曹慧怡</h5>
+            <p class="text-center"style="margin-bottom:5px;">Master</p>
+          </div>
+          </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="box">
+            <img class="img-head"src="{% static "images/Member/jianian.jpg" %}" alt="Jianian Zheng">
+            <div class="box-content">
+            <h5 class="text-center" style="margin-top:5px;margin-bottom:5px;">Jianian Zheng</h5>
+            <h5 class="text-center"style="margin-bottom:5px;">郑佳念</h5>
+            <p class="text-center"style="margin-bottom:5px;">Master</p>
+          </div>
+          </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="box">
+            <img class="img-head"src="{% static "images/Member/justin.jpg" %}" alt="Justin Green">
+            <div class="box-content">
+            <h5 class="text-center" style="margin-top:5px;margin-bottom:5px;">Justin Green</h5>
+            <p class="text-center"style="margin-bottom:5px;">Undergraduate</p>
+          </div>
+          </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="box">
+            <img class="img-head"src="{% static "images/Member/ridaa.jpg" %}" alt="Ridaa Ali">
+            <div class="box-content">
+            <h5 class="text-center" style="margin-top:5px;margin-bottom:5px;">Ridaa Ali</h5>
+            <p class="text-center"style="margin-bottom:5px;">Undergraduate</p>
+          </div>
+          </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div id="partners"class="container" style="margin-bottom:50px; margin-top:10px;">
+      <div class="row">
+        <div class="col-md-6 center-left animate-box">
+          <div class="about-desc">
+            <div class="item" style="margin-bottom:20px;margin-top:-50px;">
+              <img class="img-responsive about-img center-block" style="max-width:500px"src="{% static "images/partnerImg.jpg" %}">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 center-left animate-box" style="background-color:#66ccff;padding-left:50px;">
+          <div class="about-desc">
+            <div class="item" style="margin-bottom:50px;">
+              <h3 style="margin:0px;margin-bottom:10px;">Partners</h3>
+              <a href="https://engineering.case.edu/research/institutes/smart-secure-connected-systems" class="font14" style="color:#004466;">Institute for Smart, Secure and Connected Systems (ISSACS)</a>
+              <p style="margin-bottom:5px;"></p>
+              <a href="https://www.aptcenter.research.va.gov/" class="font14" style="color:#004466;">Advanced Platform Technology Center (APTC)</a>
+              <p style="margin-bottom:5px;"></p>
+              <a href="https://case.edu/cancer/research/office-of-cancer-disparities-research" class="font14" style="color:#004466;">Office of Cancer Disparities Research</a>
+              <p style="margin-bottom:5px;"></p>
+              <a href="https://www.ohioliving.org/communities/ohio-living-breckenridge-village" class="font14" style="color:#004466;">Ohio Living Breckenridge Village</a>
+              <p style="margin-bottom:5px;"></p>
+              <h3 style="margin:0px;margin-bottom:10px;margin-top:10px;">Sponsors</h3>
+              <p class="font14" style="color:#004466;margin-bottom:5px">National Science Foundation (NSF)</p>
+              <p class="font14" style="color:#004466;margin-bottom:5px">National Institutes of Health (NIH)</p>
+              <p class="font14" style="color:#004466;margin-bottom:5px">United States Department of Defense (DoD)</p>
+              <p class="font14" style="color:#004466;margin-bottom:5px">Ohio Bureau of Workers' Compensation (OBWC)</p>
+              <p class="font14" style="color:#004466;margin-bottom:5px">Google Internet of Things Technology</p>
+              <p class="font14" style="color:#004466;margin-bottom:5px">CWRU think[Box]</p>
+              <p class="font14" style="color:#004466;margin-bottom:5px">CWRU University Center for Innovation in Teaching and Education (UCITE)</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="contact-area" id="contact">
+		<div class="container">
+			<div class="row">
+        <div class="col-md-6 animate-box">
+          <iframe frameborder="0" height="300" width="550" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1494.0633427553169!2d-81.60722420000002!3d41.5015294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830fb86f61b4afb%3A0x68eeea53bedc4770!2sGlennan+Bldg%2C+Case+Western+Reserve+University%2C+2123+Martin+Luther+King+Jr+Dr%2C+Cleveland%2C+OH+44106!5e0!3m2!1sen!2sus!4v1419884025844" style="border:0"></iframe>
+
+          <p class="font18" style="margin-bottom:10px;"><b>Office:</b> Glennan 514B</p>
+          <p class="font18" style="margin-bottom:10px;"><b>Phone:</b> (216) 368-0397</p>
+          <p class="font18" style="margin-bottom:10px;"><b>Email:</b> ming-chun.huang@case.edu</p>
+          <p class="font18" style="margin-bottom:10px;"><b>Office:</b> Glennan 514B</p>
+          <p class="font18" style="margin-bottom:10px;"><b>Lab1:</b> Sensing and Interaction Laboratory (SAIL@CWRU): Glennan 519A</p>
+          <p class="font18" style="margin-bottom:10px;"><b>Lab2:</b> Mobile Health Lab(mHealth@CWRU): Glennan 512</p>
+
+        </div>
+				<div class="col-md-6">
+          <h2>GET IN TOUCH</h2>
+					<form role="form" method="POST" onclick="javascript:return confirm("您确认要提交表单吗？");">
+            <!-- {{form.as_p}} -->
+
+            {% csrf_token %}
+            <div class="form-group" id="name-field">
+                <div class="form-input">
+                  {{ form.name }}
+                    <!-- <input type="text" class="form-control" id="form-name" name="form-name" placeholder="Name.." required> -->
+                </div>
+            </div>
+            <div class="form-group" id="email-field">
+                <div class="form-input">
+                  {{ form.email }}
+                    <!-- <input type="email" class="form-control" id="form-email" name="form-email" placeholder="Email.." required> -->
+                </div>
+            </div>
+            <div class="form-group" id="phone-field">
+                <div class="form-input">
+                  {{ form.subject }}
+                    <!-- <input type="text" class="form-control" id="form-phone" name="form-phone" placeholder="Subject.."> -->
+                </div>
+            </div>
+            <div class="form-group" id="message-field">
+                <div class="form-input">
+                  {{ form.message }}
+                    <!-- <textarea class="form-control" rows="6" id="form-message" name="form-message" placeholder="Your Message Here..." required></textarea> -->
+                </div>
+            </div>
+            <div class="form-group">
+              <input id="contact_submit" type="submit" class="btn btn-primary btn-outline" value="Send Message">
+              <!-- <button id="contact_submit" type="submit" class="btn btn-primary btn-outline">Send Message</button> -->
+            </div>
+            <!-- <input type="submit" class="btn btn-primary" value="Submit"> -->
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+  <script type="text/javascript">
+  // window.onload=function(){
+  //     //获取滚动部分
+          var area=document.getElementById("scrollBox");
+          //设置全局定时器
+          var timer=null;
+          //定义延迟
+          var delay=2000;
+          //获取高度
+          var oLiHeight=$("#scrollBox li").height();
+          //速度
+          var speed=50;
+          area.scrollTop=0;
+          area.innerHTML+=area.innerHTML;
+        // }
+
+  function startScroll(){//开始运动
+       timer=setInterval("scrollUp()",speed);
+       area.scrollTop++;
+      }
+  function scrollUp(){//循环运动
+      if(area.scrollTop%oLiHeight==0){
+          clearInterval(timer)
+          setTimeout(startScroll,delay);
+          }else{
+              area.scrollTop++;
+               if(area.scrollTop >= area.scrollHeight/2){
+                   area.scrollTop =0;
+                   }
+              }
+      }
+
+  //页面加载两秒后运动
+    setTimeout(startScroll,delay)
+  //鼠标事件
+    $("#scrollBox").mouseover(function(){clearInterval(timer)});
+    $("#scrollBox").mouseout(function(){timer=setInterval('scrollUp()',speed)});
+  </script>
+
+
+{% endblock %}

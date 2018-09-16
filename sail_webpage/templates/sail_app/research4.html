@@ -1,0 +1,25 @@
+{% extends "sail_app/base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+    Research: Privacy-preserving deep learning architecture for mHealth
+{% endblock %}
+
+{% block body_block %}
+
+<div class="container" style="margin-bottom:30px;">
+      <div class="container" style="margin-bottom:10px;">
+          <h2 class="container">
+              Privacy-preserving deep learning architecture for mHealth
+          </h2>
+      </div>
+      <div class="">
+            <span class="font18">We design a supervised distributed consensus system on mobile devices. This collaborative learning scheme enables multiple local sites to train a global model together without releasing personal data but with sharing partial parameters between local sites. The contributions are shown as follow. First, a supervised distributed consensus system is proposed and implemented on mobile devices (smartphones) via wireless communication. Privacy is protected by keeping data local and by the parameter selection mechanism. Second, experiments are designed to evaluate performance in different scenarios, including parameter selection, different parameter exchanging protocols, and an unstable network which results in missing updates. Finally, the cumulative network traffic of the entire training process in distributed and centralized scenarios is compared. Our results verified the feasibility of collaborative deep learning architectures in a distributed mHealth environment.
+            </span>
+          <p></p>
+          <div class="container" style="margin-bottom:10px;"></div>
+          <center><img src="{% static "images/research/research4_1.png" %}" style="height:300px;"alt=""></center>
+      </div>
+    </div>
+
+{% endblock %}
