@@ -8,10 +8,17 @@
 }
 
 img#logoImg{
+<<<<<<< HEAD
+  margin-left: 10px;
+    /* max-width: 15%; */
+    max-height: 20px;
+    margin-right: 20px;
+=======
   margin-left: 50px;
     /* max-width: 15%; */
     max-height: 20px;
     margin-right: 30px;
+>>>>>>> deploy version 1.0
 }
 
 
@@ -42,7 +49,11 @@ ul#nav li a {
     font-weight: 700;
     letter-spacing: 1px;
     padding: 20px 0px 0px 0px;
+<<<<<<< HEAD
+    text-transform: uppercase;
+=======
     /* text-transform: uppercase; */
+>>>>>>> deploy version 1.0
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
@@ -105,32 +116,56 @@ li#dropli a{
   font-family:'times new roman',times,serif;
 }
 .font18{
+<<<<<<< HEAD
+  font-size:18px;
+  font-family:'times new roman',times,serif;
+}
+.font18bold{
+  font-size:18px;
+=======
   font-size:16px;
   font-family:'times new roman',times,serif;
 }
 .font18bold{
   font-size:16px;
+>>>>>>> deploy version 1.0
   font-family:'times new roman',times,serif;
   font-weight: 700;
 }
 .font18red{
   color: red;
+<<<<<<< HEAD
+  font-size:18px;
+=======
   font-size:16px;
+>>>>>>> deploy version 1.0
   font-family:'times new roman',times,serif;
 }
 .font18green{
   color: green;
+<<<<<<< HEAD
+  font-size:18px;
+=======
   font-size:16px;
+>>>>>>> deploy version 1.0
   font-family:'times new roman',times,serif;
 }
 .font18blue{
   color: blue;
+<<<<<<< HEAD
+  font-size:18px;
+=======
   font-size:16px;
+>>>>>>> deploy version 1.0
   font-family:'times new roman',times,serif;
 }
 .font18yellow{
   color: 	#DAA520;
+<<<<<<< HEAD
+  font-size:18px;
+=======
   font-size:16px;
+>>>>>>> deploy version 1.0
   font-family:'times new roman',times,serif;
 }
 
@@ -188,6 +223,8 @@ padding: 0! important
 :target{
   padding-top:64px;
 }
+<<<<<<< HEAD
+=======
 
 
 .container-member {
@@ -305,3 +342,4 @@ padding: 0! important
     margin-right: auto;
     display: block
 }
+>>>>>>> deploy version 1.0
