@@ -2,6 +2,11 @@
   margin-bottom: 30px;
   border-bottom: 1px solid #cccccc;
 } */
+.res-section{
+    margin-bottom:30px;
+    text-align:justify;
+}
+
 .img-head{
   width: 100px;
   height: 100px;
