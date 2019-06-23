@@ -97,5 +97,8 @@ def research3(request):
 def research4(request):
     return render(request, 'sail_app/research4.html')
 
+def nsfprothesis(request):
+    return render(request, 'sail_app/nsfprothesis.html')
+
 def partner(request):
     return render(request, 'sail_app/partner.html')

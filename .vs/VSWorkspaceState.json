@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\sail_webpage",
+    "\\sail_webpage\\sail_app",
+    "\\sail_webpage\\sail_webpage",
+    "\\sail_webpage\\sail_webpage\\__pycache__",
+    "\\sail_webpage\\static",
+    "\\sail_webpage\\static\\images",
+    "\\sail_webpage\\static\\images\\research",
+    "\\sail_webpage\\templates",
+    "\\sail_webpage\\templates\\sail_app"
+  ],
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,102 @@
+{% extends "sail_app/base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+    Research: NSF prothesis project
+{% endblock %}
+
+{% block body_block %}
+
+<div class="container res-section">
+      <div class="container" style="margin-bottom:10px;">
+          <h2 class="container">
+          <img src="{% static "images/nsf2.png" %}" style="height:80px;"alt="">
+              NSF prothesis project
+          </h2>
+      </div>
+      <div class="">
+            <span class="font18">The goal of this project is to positively impact the field of prosthetics by providing a continued quantification and visualization method for both pressure and shear force distribution estimation and enhancing the prosthetic interface designing-fitting experience.
+              We proposed that using a wearable nanofabrication designs system with visualized application to understand the socket-residual limb interface force distribution with static behaviors or dynamic behaviors that including gait analysis and kinematics analysis, because this study will have effect on patient satisfaction and function. We proposed to characterize the ZnO 3D nanowall network sensor, calculate learning-based regression model to estimate the statistical parameter set which is associated with applied forces, and develop visualization solutions for real-time force distribution tracking and mapping. The proposed 3D visualization software will present the pattern, trends and anomalies in the data collected by the measurement system and provide a complete view of the force distribution surrounding the prosthetic device. With such software, it will be possible to identify whether there is excessive force if the device is not properly installed.
+            </span>
+            <p></p>
+          <div class="container" style="margin-bottom:10px;"></div>
+          <center><img src="{% static "images/research/1InternetofWearableThings.jpg" %}" style="height:500px;"alt=""></center>
+          <div class="container" style="margin-bottom:20px;"></div>
+          <span class = "font18"> There will be three parts to complete this complicated system for fulfilling creating better fitting intelligent prosthetic sockets. These are: 1) material simulation and synthesis, which is designing and fabricating ZnO 3D nanowall network-based sensor device on a flexible platform that is suitable for pressure and shear force measurement; 2) system design and device fabrication, which is investigating a prosthetic interface monitoring system that can be used for long-term force distribution estimation; 3) pressure and shear force of stump-socket interface visualization, which is developing
+          visualization solutions for real-time force distribution tracking and mapping.</span>
+          <div class="container" style="margin-bottom:10px;"></div>
+        <p></p>
+      </div>
+
+      <div class="">
+          <h4>ZnO nanowall synthesis</h4>
+          <center><img src="{% static "images/research/2Nanowall.png" %}" style="height:400px;"alt=""></center>
+          <div class="container" style="margin-bottom:20px;"></div>
+            <span class="font18">
+Zhao’s group has developed a solution synthesis process for piezoelectric ZnO nanowall (NW) networks. The synthesis is based on the hydrothermal reaction between zinc nitrate hexahydrate (ZNH, Zn(NO<sub>3</sub>)<sub>2</sub>)&#183;6H<sub>2</sub>O) and hexamethylenetetramine (HMT, (CH<sub>2</sub>)&#183;6N<sub>4</sub>). The ZnO NWs were grown in an aqueous solution of ZNH and HMT at 80&#176;C, and thus it is a scalable and low cost process, suitable to grow on any substrate. Synthesis conditions have been mapped to identify optimized condition that produce uniform, ZnO NWs. The synthesized materials were characterized by field emission scanning electron microscopy (FESEM), X-ray diffraction (XRD) and photoluminescence (PL) spectroscopy. Thermal annealing has been performed on the assynthesized ZnO NWs to study the materials’ properties on the thermal annealing conditions.
+                </span>
+            <p></p>
+          <div class="container" style="margin-bottom:10px;"></div>
+      </div>
+
+      <div class="">
+          <h4>ZnO NW Sensor Device</h4>
+          <center><img src="{% static "images/research/3Device.png" %}" style="height:250px;"alt=""></center>
+          <div class="container" style="margin-bottom:20px;"></div>
+            <span class="font18">
+To demonstrate piezoelectricity of ZnO NWs, we designed and fabricated prototype devices based on our synthesis and transfer process. Polyimide film (PI) served as both top and bottom substrate and Ti/Au was deposited as contact. The ZnO NW film was first annealed at 650&#176;C and transferred in larger area compared to that of Au contact pads, avoiding possible crosstalk between top and bottom contacts. ZnO NW films were first transferred to the bottom substrate and then packed with top PI substrate. Epoxy adhesive was applied on edges of PI substrates for device packaging. Copper wires were connected to outer contact pads to form extended connection.
+</span>
+            <p></p>
+      </div>
+
+      <div class="">
+        <span class="font18">
+          The fabricated outcomes are showed in the following Figure. The flexible PCB has a maximum of 96 sensors. It is a three layers sandwich design. To show the structure of the pressure sensor array clearly, it was pulled apart. It is built with one pair of copper pads distributed on the top and bottom layer respectively, and the piezo-resistive material covered by this pair of copper pads. The figures are the rigid PCB’s front side and back side respectively. The signal processing circuit main components are also highlighted in the fabricated outcome. A red LED was used to indicate the working status of the system. Battery charging management unit and the 3.3V low dropout regulator (LDO) were used to manage the power of the system. A fully charged Lithium-ion battery with a capacity of 1000 mAh could power the system for about 5 hours.
+</span>
+          <center><img src="{% static "images/research/4Circuit.png" %}" style="height:350px;"alt=""></center>
+          <div class="container" style="margin-bottom:20px;"></div>
+            <span class="font18">
+An extended FPC connector makes current design much more flexible. It can be used for further extension applications or adding more sensor units in the future. To make it conveniently for wear, the circuit board was designed in a small size (46*46*0.8mm) and lightweight. The data communication with computers or android mobile devices has been achieved through Bluetooth with sampling rate of 30Hz.
+</span>
+            <p></p>
+          <div class="container" style="margin-bottom:10px;"></div>
+      </div>
+
+      <div class="">
+        <center><img src="{% static "images/research/5Sensors.jpg" %}" style="height:350px;"alt=""></center>
+        <div class="container" style="margin-bottom:20px;"></div>
+            <span class="font18">In considering the manufacturing process and expense for the sensors, the sensor inputs come out of the top of the liner/socket to connect with data collection hardware. We thought customizing the rectangles to capture the bottom of the socket will give us the coverage that we need while also making connection to hardware as easy as possible. The number of rectangles that we need to achieve the coverage and how to customize each rectangle will depend on actual shape and size of patient’s residual limb. The current version of design could support as many as 96 sensors on each sensor array. For covering the whole interface of the socket/stump contact area and providing reliable data, three or four pieces arrays might need to be implemented onto the socket interface.
+            </span>
+            <p></p>
+          <div class="container" style="margin-bottom:10px;"></div>
+      </div>
+
+      <div class="">
+        <center><img src="{% static "images/research/6Overview.png" %}" style="height:450px;"alt=""></center>
+        <div class="container" style="margin-bottom:20px;"></div>
+        <h4>Key outcomes or Other achievements</h4>
+            <span class="font18">
+2 journal papers and 1 conference paper are published. 2 journal papers are accepted and will be published later this year. 2 Non-provision patent applications are filed in 2018. The developed system under Internet of Wearable things umbrella was reported byVeterans Affairs & Military Medicine Magazine Outlook, Fall 2018, "Wearable Technology - On the Threshold of Clinical Care". During the project period, a senior female graduate student, Ms. Subrina Rafique, in the Co-PI Zhao's group has successfully
+defended her PhD dissertation in Nov. 2017, and she joined Intel as a research engineer.
+            </span>
+            <p></p>
+          <div class="container" style="margin-bottom:10px;"></div>
+      </div>
+
+
+      <div class="">
+            <h3>Publications</h3>
+            <a href="http://jss.ecsdl.org/content/7/7/Q3114.short">1. Z. Feng, S. Rafique, Y. Cai, L. Han, M.-C. Huang, H. Zhao, ECS J. Solid State 7, Q3114 (2018).</a>
+            <div class="container" style="margin-bottom:10px;"> </div>
+            <a href="https://ieeexplore.ieee.org/abstract/document/8353226">2. Diliang Chen, Yi Cai, Ming-Chun Huang, ”Customizable Pressure Sensor Array: Design and Evaluation", IEEE Sensors Journal (SJ), Volume: 18, Issue 15, 2018, Pages 6337 - 6344.</a>
+            <div class="container" style="margin-bottom:10px;"> </div>
+            <a href="https://ieeexplore.ieee.org/abstract/document/8584784">3. Yi Cai, Haotian Jiang, Jia Chen, Diliang Chen, Guanzhou Qu, Hongping Zhao, Rahila Ansari, Ming-Chun Huang, "Smart Prosthesis System: Continuous Automatic Prosthesis Fitting Adjustment and Real-time Stress Visualization", 2018 IEEE Biomedical Circuits and Systems Conference, Cleveland, USA, October 2018.</a>
+            <div class="container" style="margin-bottom:10px;"> </div>
+            <a href="https://ieeexplore.ieee.org/abstract/document/8665985">4. Xiaoliang Zhang, Ziqi Yang, Taiyu Chen, Diliang Chen, Ming-Chun Huang, "Cooperative Sensing and Wearable Computing for Sequential Hand Gesture Recognition", IEEE Sensors Journal (SJ), 2019.</a>
+            <div class="container" style="margin-bottom:10px;"> </div>
+            <a href="https://ieeexplore.ieee.org/abstract/document/8710264">5. Diliang Chen, Huiyi Cao, Huan Chen, Zetao Zhu, Xiaoye Qian, Wenyao Xu, Ming- Chun Huang, "Smart Insole Based Indoor Localization System for Internet of Things Applications", IEEE Internet of Things Journal (IOT), 2019.</a>
+          <div class="container" style="margin-bottom:20px;"></div>
+      </div>
+    </div>
+
+{% endblock %}
