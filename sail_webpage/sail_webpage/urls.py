@@ -31,5 +31,6 @@ urlpatterns = [
     path('research3/', views.research3, name='research3'),
     path('research4/', views.research4, name='research4'),
     path('nsfprothesis/', views.nsfprothesis, name='nsfprothesis'),
+    path('gaitlab/', views.gaitlab, name='gaitlab'),
     path('partner/', views.partner, name='partner')
 ]

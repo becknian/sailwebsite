@@ -1,0 +1,60 @@
+{% extends "sail_app/base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+    Research: Wearable Gait Lab
+{% endblock %}
+
+{% block body_block %}
+
+<div class="container res-section">
+      <div class="container" style="margin-bottom:10px;">
+          <h2 class="container">
+              Wearable Gait Lab - Risk Factors Identification for Work-related Injuries
+              <p></p>
+              (w/ Dr. Wenyao Xu at Unversity at Buffalo)
+          </h2>
+      </div>
+
+     <div class="container res-section">
+            <span class="font18">Foot is a complex and critical part of the human body to realize locomotion. Sensing from foot, importance information about human gait, postures of activities, and walking trajectory could be obtained, which could contribute to applications such as healthcare, worker safety, and indoor localization. In this research, an innovative wearable system—Wearable Gait Lab (WGL) was designed to monitor plantar pressure and foot motion.
+            </span>
+      </div>
+
+    <div class="container res-section">
+        <span class="font18bold">Design advantages</span>
+        <p></p>
+        <ol>
+            <li class="font18">Hidden design. All the hardware devices were nested into an insole shaped case to make WGL an easily acceptable device that could be used the same as a normal insole. </li>
+            <li class="font18">Customized design. A customized design method was proposed and applied on WGL, which makes it possible for WGL to be trimmed to fit different foot sizes with one design. The customized design also contributes to decrease the manufacturing cost and make WGL affordable to most people.  </li>
+        </ol>
+    </div>
+
+    <div class="container res-section">
+        <span class="font18bold">Applications exploration</span>
+        <p></p>
+        <ol>
+            <li class="font18">Worker safety. WGL was applied to discriminate risk factors of work-related musculoskeletal disorders such as overexertion, awkward postures and excessive repetition.</li>
+            <li class="font18">Indoor localization. A Known Velocity Update and Double-Foot Position Calibration (KUPT + DFPC) method was proposed and applied with WGL to help reduce the accumulated drift of accelerometer. KUPT could measure the velocity from heel-strike to toe-off based on the recorded real-time foot angle and the shoe dimensions, which increases the time period when the velocity could be measured from 24% to 62% of a whole gait cycle time when compared with Zero Velocity Update (ZUPT). DFPC method could fuse the position information of both feet based on the symmetrical characteristic of human gait to further increase the reliability of the localization results. </li>
+        </ol>
+        <div style="text-align: center;">
+            <img src="{% static "images/research/smartphone_app.png" %}"  class="center" alt="">
+            <span class="font18">Fig. 1. Smart Insole hardware and the corresponding smartphone App. (a) Details on the circuit board for signal processing and wireless transmission; (b) Insole shaped customizable pressure sensor array; (c) Architecture of the Smart Insole; (d) The smartphone App that works with Smart Insole, which could display real-time information like plantar pressure map, localization results, and gait parameters.</span>
+            <img src="{% static "images/research/gait_lab_system.png" %}"  class="center" alt="">
+            <span class="font18">Fig.2. System architecture of Wearable Gait Lab</span>
+            <img src="{% static "images/research/mearsure_pressure_sensor.png" %}"  class="center" alt="">
+            <span class="font18">Fig.3. Mechanism of measuring a piezo-resistive pressure sensor on the sensor array.</span>
+            <img src="{% static "images/research/example_design.png" %}"  class="center" alt="">
+            <span class="font18">Fig. 4. An example design of the customizable pressure sensor array. Green lines indicate the outlines of two smaller sensor array. Circuit wires should be designed to make sure that all the remaining sensors could be connected with the FPC connector.</span>
+            <img src="{% static "images/research/insole_shape.png" %}"  class="center" alt="">
+            <span class="font18">Fig. 5. Examples of trimmed insole shaped customized pressure sensor array. </span>
+            <img src="{% static "images/research/flowchart_of_WMSDs.png" %}"  class="center" alt="">
+            <span class="font18">Fig. 6. Flowchart of work-related musculoskeletal disorders (WMSDs)risk factors identification. Plantar pressure of work-related postures could be recorded by Wearable Gait Lab. Using the features (e.g. pressure center) extracted from plantar pressure as input, the sequential minimal optimization (SMO)algorithm could be applied for quasi-static postures and force exertions recognition. Using the videos of plantar pressure distribution in sequential postures as input, the algorithm combined convolutional neural network (CNN) and long short-term memory (LSTM) network could be applied for sequential postures and repetitions recognition.</span>
+            <img src="{% static "images/research/kupt_dfpc.png" %}"  class="center" alt="">
+            <span class="font18">Fig. 7. The KUPT+DFPC method based on human gait. KUPT could be applied to the whole “stance” stage (from heel-strike to toe-off) which covered 62% of a gait cycle time. DFPC takes use of the symmetrical characteristics of human gait to calibrate the step distance of one foot with the other foot.</span>
+        </div>
+
+
+    </div>
+
+{% endblock %}

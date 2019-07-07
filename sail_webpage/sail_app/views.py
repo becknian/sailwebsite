@@ -100,5 +100,8 @@ def research4(request):
 def nsfprothesis(request):
     return render(request, 'sail_app/nsfprothesis.html')
 
+def gaitlab(request):
+    return render(request, 'sail_app/gaitlab.html')
+
 def partner(request):
     return render(request, 'sail_app/partner.html')
